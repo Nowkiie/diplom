@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{B664A332-501C-4FDD-9FDF-989B1B8B7665}</ProjectGuid>
+    <RootNamespace>tests</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(Build)</OutDir>
+    <IntDir>$(SolutionDir)build_\$(ProjectName)_$(Configuration)$(PlatformShortName)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformShortName)</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(Build)</OutDir>
+    <IntDir>$(SolutionDir)build_\$(ProjectName)_$(Configuration)$(PlatformShortName)\</IntDir>
+    <TargetName>$(ProjectName)$(PlatformShortName)</TargetName>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>BOOST_SYSTEM_USE_UTF8;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(BOOST_1_69);$(IPP_9_0);..\submodules\demod-interface\demod_xml;..\submodules\google_test\googlemock;..\submodules\google_test\googlemock\include;..\submodules\google_test\googletest;..\submodules\google_test\googletest\include;..\submodules\nprotocol;.\radio_track;$(SolutionDir)\radio_track;..\submodules\itm;..\submodules\itm\include;$(QTDIR)\include\QtCore;$(QTDIR)\include;..\submodules\new_qwt;..\submodules\itm\src</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(QTDIR)\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>BOOST_SYSTEM_USE_UTF8;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(BOOST_1_69);$(IPP_9_0);..\submodules\demod-interface\demod_xml;..\submodules\google_test\googlemock;..\submodules\google_test\googlemock\include;..\submodules\google_test\googletest;..\submodules\google_test\googletest\include;..\submodules\nprotocol;.\radio_track;$(SolutionDir)\radio_track;..\submodules\itm;..\submodules\itm\include;..\submodules\itm\src;$(QTDIR)\include\QtCore\;$(QTDIR)\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\radio_track\calculate\calculationLosses.cpp" />
+    <ClCompile Include="..\submodules\google_test\googlemock\src\gmock-all.cc" />
+    <ClCompile Include="..\submodules\google_test\googletest\src\gtest-all.cc" />
+    <ClCompile Include="..\submodules\itm\src\ComputeDeltaH.cpp" />
+    <ClCompile Include="..\submodules\itm\src\DiffractionLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FindHorizons.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FreeSpaceLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FresnelIntegral.cpp" />
+    <ClCompile Include="..\submodules\itm\src\H0Function.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InitializeArea.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InitializePointToPoint.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InverseComplementaryCumulativeDistributionFunction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\itm_area.cpp" />
+    <ClCompile Include="..\submodules\itm\src\itm_p2p.cpp" />
+    <ClCompile Include="..\submodules\itm\src\KnifeEdgeDiffraction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LinearLeastSquaresFit.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LineOfSightLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LongleyRice.cpp" />
+    <ClCompile Include="..\submodules\itm\src\QuickPfl.cpp" />
+    <ClCompile Include="..\submodules\itm\src\SigmaHFunction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\SmoothEarthDiffraction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\TerrainRoughness.cpp" />
+    <ClCompile Include="..\submodules\itm\src\TroposcatterLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\ValidateInputs.cpp" />
+    <ClCompile Include="..\submodules\itm\src\Variability.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\test_test.cpp" />
+    <ClCompile Include="test_calculate_loss.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

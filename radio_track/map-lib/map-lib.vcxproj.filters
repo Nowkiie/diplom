@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\submodules\BaseMap\extentions\checkablemapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\circlepoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\citylabel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\citylabelsmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\coordinatenetmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\coordinatetranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createimagemapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createorientedrppmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createpelengmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createplacemapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createregionmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createrppmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\createsectormapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\cursorposmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\curve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\distanceconverters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\ellipseselectionmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\adapters\emptymapadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\fixedimageoverlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\geometryconnectormapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\geometrycreatormapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\geometryinfomapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\geometrylayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\geometryprocessormapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\gps_position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\imagemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\layer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\layermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\layerswitchmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\lengthmeasuremapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\linestring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\adapters\localmapadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\adapters\mapadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\mapcontrol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\mapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\mapextentionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\maplayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\maplocalindexfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\maplocalpath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\maplocalworker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\mapnetwork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\mapnetworkclient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\mapnetworkfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\objectmovemapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\peleng.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\pelengbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\persistentmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\place.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\point.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\rectangleselectionmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\region.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\rpp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\rpplabeled.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\scrollzoommapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\sector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\sectorselectionmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\selectionmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\selectormapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\showallmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\showgeometrymapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\geometries\staticgeometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\adapters\tilemapadapter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\zoominmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\core\zoomleveldistances.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\BaseMap\extentions\zoomoutmapextention.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="..\submodules\BaseMap\extentions\checkablemapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\geometries\circlepoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\geometries\citylabel.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\citylabelsmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\coordinatenetmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\coordinatetranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createimagemapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createorientedrppmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createpelengmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createplacemapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createregionmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createrppmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\createsectormapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\cursorposmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\geometries\curve.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\distanceconverters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\ellipseselectionmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\adapters\emptymapadapter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\geometries\fixedimageoverlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\geometries\geometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\geometryconnectormapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\geometrycreatormapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\geometryinfomapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\geometrylayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\geometryprocessormapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\gps_position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\submodules\BaseMap\core\idistanceconverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\geometries\image.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\imagemanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\layer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\layermanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\layerswitchmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\lengthmeasuremapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\geometries\linestring.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\adapters\localmapadapter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\adapters\mapadapter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\mapcontrol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\mapempty.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\mapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\mapextentionmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\mapfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\core\maplayer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\maploader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\maplocalindexfile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\maplocalpath.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\maplocalworker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\mapnetwork.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\mapnetworkclient.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\core\mapnetworkfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\objectmovemapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\geometries\peleng.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\geometries\pelengbase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\persistentmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\geometries\place.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\geometries\point.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\rectangleselectionmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\geometries\region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\submodules\BaseMap\geometries\rpp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\submodules\BaseMap\geometries\rpplabeled.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\scrollzoommapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\geometries\sector.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\sectorselectionmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\selectionmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\selectormapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\showallmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\extentions\showgeometrymapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\geometries\staticgeometry.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\submodules\BaseMap\adapters\tilemapadapter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\urlconverter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\zoominmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="..\submodules\BaseMap\core\zoomleveldistances.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="..\submodules\BaseMap\extentions\zoomoutmapextention.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </ItemGroup>
+</Project>

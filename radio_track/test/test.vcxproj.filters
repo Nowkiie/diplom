@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\test_test.cpp" />
+    <ClCompile Include="..\radio_track\calculate\calculationLosses.cpp">
+      <Filter>radio_track</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\google_test\googlemock\src\gmock-all.cc" />
+    <ClCompile Include="..\submodules\google_test\googletest\src\gtest-all.cc" />
+    <ClCompile Include="test_calculate_loss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\ComputeDeltaH.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\DiffractionLoss.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FindHorizons.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FreeSpaceLoss.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FresnelIntegral.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\H0Function.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InitializeArea.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InitializePointToPoint.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InverseComplementaryCumulativeDistributionFunction.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\itm_area.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\itm_p2p.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\KnifeEdgeDiffraction.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LinearLeastSquaresFit.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LineOfSightLoss.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LongleyRice.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\QuickPfl.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\SigmaHFunction.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\SmoothEarthDiffraction.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\TerrainRoughness.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\TroposcatterLoss.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\ValidateInputs.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\Variability.cpp">
+      <Filter>itm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="radio_track">
+      <UniqueIdentifier>{0a9c77df-d6f4-4d9b-a4ba-4e96b83f0da1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="itm">
+      <UniqueIdentifier>{60760c8b-bb8a-471a-b450-0a12cd726bb0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icons/earth.ico</file>
+        <file>resources/icons/grid.png</file>
+        <file>resources/icons/length.png</file>
+        <file>resources/icons/3d.png</file>
+        <file>resources/icons/polarCoverage.png</file>
+        <file>resources/icons/radioTrack.png</file>
+        <file>resources/icons/settings.png</file>
+        <file>resources/icons/visualCoverage.png</file>
+        <file>resources/icons/clear.png</file>
+    </qresource>
+    <qresource prefix="/images">
+        <file>resources/images/degree.png</file>
+        <file>resources/images/sec.png</file>
+        <file>resources/images/arcsec.png</file>
+        <file alias="texture">resources/images/textureForPoint.png</file>
+    </qresource>
+    <qresource prefix="/translate">
+        <file>radio_track_ru.qm</file>
+    </qresource>
+</RCC>

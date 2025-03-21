@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>unitForm</class>
+ <widget class="QWidget" name="unitForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>534</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Unit Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="nameLabel">
+     <property name="text">
+      <string>Name unit</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QLineEdit" name="nameEdit"/>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QGroupBox" name="send_groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>291</width>
+       <height>81</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>81</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Coordinate</string>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_degree">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>000</string>
+      </property>
+      <property name="maxLength">
+       <number>3</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_sec">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>30</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>00</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_arcsec">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>30</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>00</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="name_lat">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>28</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>N</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lat_send">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Latitude:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_degree">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>20</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/degree.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sec">
+      <property name="geometry">
+       <rect>
+        <x>152</x>
+        <y>20</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/sec.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_arcsec">
+      <property name="geometry">
+       <rect>
+        <x>202</x>
+        <y>20</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/arcsec.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_lon_send">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>51</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Longitude:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_degree_2">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>000</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_degree_2">
+      <property name="geometry">
+       <rect>
+        <x>102</x>
+        <y>42</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/degree.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_sec_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_sec_2">
+      <property name="geometry">
+       <rect>
+        <x>152</x>
+        <y>42</y>
+        <width>16</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/sec.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_arcsec_2">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>50</y>
+        <width>31</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="inputMask">
+       <string>00</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_arcsec_2">
+      <property name="geometry">
+       <rect>
+        <x>202</x>
+        <y>42</y>
+        <width>21</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="radio_track.qrc">:/images/resources/images/arcsec.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="name_lon">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>48</y>
+        <width>31</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>E</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QGroupBox" name="hardware_groupBox">
+     <property name="title">
+      <string>Hardware</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="group_antSystem">
+        <property name="title">
+         <string>ant system</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QComboBox" name="combo_nameAntSystem"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_addAntSystem">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delAntSystem">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_changeAntSystem">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>!</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="group_sender">
+        <property name="title">
+         <string>sender</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QComboBox" name="combo_nameSender"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_addSender">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delSender">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_changeSender">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>!</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="group_recvier">
+        <property name="title">
+         <string>recvier</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QComboBox" name="combo_nameRec"/>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_addRec">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_delRec">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_changeRec">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>!</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="btnApply">
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="radio_track.qrc"/>
+ </resources>
+ <connections/>
+</ui>

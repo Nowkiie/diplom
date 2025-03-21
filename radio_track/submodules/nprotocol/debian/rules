@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with-systemd
+
+override_dh_auto_install:
+
+	mkdir -p debian/ncmonitor/opt/znak/bin
+	mkdir -p debian/ncmonitor/opt/znak/share/applications
+	mkdir -p debian/ncmonitor/opt/znak/share/icons
+	cp -P ncmonitor/ncmonitor debian/ncmonitor/opt/znak/bin/ncmonitor
+	cp -P debian/ncmonitor.desktop debian/ncmonitor/opt/znak/share/applications/ncmonitor.desktop
+	/bin/sed -i -e "s/_VERSION_/$(shell cat ./.version.tmp)/g" debian/ncmonitor/opt/znak/share/applications/ncmonitor.desktop
+	cp -P ncmonitor/icons/icon.png debian/ncmonitor/opt/znak/share/icons/ncmonitor.png
+
+	mkdir -p debian/noderesolver/opt/znak/bin
+	mkdir -p debian/noderesolver/opt/znak/etc/systemd/system
+	mkdir -p debian/noderesolver/etc/systemd/system
+	cp -P noderesolver/noderesolver debian/noderesolver/opt/znak/bin/noderesolver
+	cp -P noderesolver/noderesolver.service debian/noderesolver/opt/znak/etc/systemd/system/noderesolver.service
+	ln -s /opt/znak/etc/systemd/system/noderesolver.service debian/noderesolver/etc/systemd/system/noderesolver.service
+
+	mkdir -p debian/nctop/opt/znak/bin
+	cp -P nctop/nctop debian/nctop/opt/znak/bin/nctop
+
+
+override_dh_installchangelogs:
+
+override_dh_installdocs:
+
+override_dh_auto_test:
+
+	#fakeroot /sbin/setcap cap_net_bind_service=+ep test/test
+
+	dh_auto_test

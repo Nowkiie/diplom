@@ -1,0 +1,13 @@
+*.obj
+/include/qwt
+/src/GeneratedFiles/
+*.tlog
+*.log
+/.vs/
+*.lib
+*.pdb
+/src/*.user
+*.suo
+*.db
+moc/
+x64/

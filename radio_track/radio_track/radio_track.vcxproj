@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D58DB494-673A-42AE-B10B-06EA2A1FCCD7}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.18362.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(BOOST_1_69);..\submodules\nprotocol;..\submodules\BaseMap;..\submodules\EarthMath\EarthMath\src;..\submodules\new_qwt\src;..\submodules\util;..\submodules\itm\include;..\submodules\itm\win32\ITMDrvr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\lib;$(SolutionDir)..\bin\x64\$(Configuration)\;$(Build);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>map-lib.lib;qwt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(QTDir)\bin\windeployqt.exe" --release --dir "$(TargetDir)."  --no-translations  "$(TargetPath)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\submodules\nprotocol;..\submodules\BaseMap;$(BOOST_1_69);..\submodules\EarthMath\EarthMath\src;..\submodules\new_qwt\src;..\submodules\util;..\submodules\itm\include;..\submodules\itm\win32\ITMDrvr;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\lib;..\Build\x64;$(SolutionDir)..\bin\x64\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>map-lib.lib;qwtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <StackReserveSize>
+      </StackReserveSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.12.9.shared.vs2017.x64</QtInstall>
+    <QtModules>core;datavisualization;gui;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.12.9.shared.vs2017.x64</QtInstall>
+    <QtModules>core;datavisualization;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\submodules\itm\src\ComputeDeltaH.cpp" />
+    <ClCompile Include="..\submodules\itm\src\DiffractionLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FindHorizons.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FreeSpaceLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\FresnelIntegral.cpp" />
+    <ClCompile Include="..\submodules\itm\src\H0Function.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InitializeArea.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InitializePointToPoint.cpp" />
+    <ClCompile Include="..\submodules\itm\src\InverseComplementaryCumulativeDistributionFunction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\itm_area.cpp" />
+    <ClCompile Include="..\submodules\itm\src\itm_p2p.cpp" />
+    <ClCompile Include="..\submodules\itm\src\KnifeEdgeDiffraction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LinearLeastSquaresFit.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LineOfSightLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\LongleyRice.cpp" />
+    <ClCompile Include="..\submodules\itm\src\QuickPfl.cpp" />
+    <ClCompile Include="..\submodules\itm\src\SigmaHFunction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\SmoothEarthDiffraction.cpp" />
+    <ClCompile Include="..\submodules\itm\src\TerrainRoughness.cpp" />
+    <ClCompile Include="..\submodules\itm\src\TroposcatterLoss.cpp" />
+    <ClCompile Include="..\submodules\itm\src\ValidateInputs.cpp" />
+    <ClCompile Include="..\submodules\itm\src\Variability.cpp" />
+    <ClCompile Include="3d\3dForm.cpp" />
+    <ClCompile Include="calculate\calculateTile.cpp" />
+    <ClCompile Include="calculate\calculationLosses.cpp" />
+    <ClCompile Include="calculate\calc_coverage.cpp" />
+    <ClCompile Include="calculate\calculatePoint.cpp" />
+    <ClCompile Include="calculate\color_height.cpp" />
+    <ClCompile Include="calculate\coordinate.cpp" />
+    <ClCompile Include="draw_geometry\drawCoverage.cpp" />
+    <ClCompile Include="draw_geometry\drawVisCoverage.cpp" />
+    <ClCompile Include="draw_geometry\endCoveragePos.cpp" />
+    <ClCompile Include="settings\formUnit.cpp" />
+    <ClCompile Include="request_tile\imagemanager_req.cpp" />
+    <ClCompile Include="request_tile\layermanager_req.cpp" />
+    <ClCompile Include="request_tile\layer_req.cpp" />
+    <ClCompile Include="request_tile\mapcontrol_req.cpp" />
+    <ClCompile Include="request_tile\maplayer_req.cpp" />
+    <ClCompile Include="settings\paramNet.cpp" />
+    <ClCompile Include="settings\settingsHardware.cpp" />
+    <ClCompile Include="settings\tableModel.cpp" />
+    <ClCompile Include="settings\settingsForm.cpp" />
+    <ClCompile Include="dynamic_interface\dynamicInterface.cpp" />
+    <ClCompile Include="settings\workWithHardware.cpp" />
+    <ClCompile Include="parse_file\workWithJson.cpp" />
+    <ClCompile Include="settings\workWithUnit.cpp" />
+    <ClCompile Include="3d\surfaceGraph.cpp" />
+    <ClCompile Include="3d\topographySeries.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <QtRcc Include="radio_track.qrc" />
+    <QtUic Include="3d\3dForm.ui" />
+    <QtUic Include="settings\formUnit.ui" />
+    <QtUic Include="radio_track.ui" />
+    <QtMoc Include="radio_track.h" />
+    <ClCompile Include="draw_geometry\BeginPosition.cpp" />
+    <ClCompile Include="map_widget.cpp" />
+    <ClCompile Include="radio_track.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="settings\settingsHardware.ui" />
+    <QtUic Include="settings\settingsWidget.ui" />
+    <QtUic Include="test.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="map_widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="calculate\calculationLosses.h" />
+    <ClInclude Include="calculate\interface_calculate_loss.h" />
+    <ClInclude Include="dynamic_interface\paramsList.h" />
+    <ClInclude Include="parse_file\workWithJson.h" />
+    <ClInclude Include="struct\structEnetringData.h" />
+    <QtMoc Include="widgets\widgetCoordinate.h" />
+    <QtMoc Include="dynamic_interface\factory.h" />
+    <QtMoc Include="dynamic_interface\interfaceDrawRT.h" />
+    <QtMoc Include="draw_geometry\drawStep.h" />
+    <ClInclude Include="dynamic_interface\interfaceDrawCoverage.h" />
+    <ClInclude Include="dynamic_interface\interfaceRTChooseUnits.h" />
+    <ClInclude Include="dynamic_interface\interfaceRTMethodCalc.h" />
+    <QtMoc Include="dynamic_interface\baseInterface.h" />
+    <ClInclude Include="dynamic_interface\interfaceRecvier.h" />
+    <ClInclude Include="dynamic_interface\interfaceSender.h" />
+    <ClInclude Include="dynamic_interface\interfaceSettAntSystem.h" />
+    <ClInclude Include="dynamic_interface\intrefaceDraw3D.h" />
+    <QtMoc Include="settings\paramNet.h" />
+    <QtMoc Include="settings\settingsHardware.h" />
+    <ClInclude Include="state.h" />
+    <ClInclude Include="dynamic_interface\interfaceRTChoosePoint.h" />
+    <QtMoc Include="dynamic_interface\dynamicInterface.h" />
+    <ClInclude Include="structForSendParam.h" />
+    <ClInclude Include="structParamNet.h" />
+    <ClInclude Include="settings\workWithHardware.h" />
+    <QtMoc Include="settings\formUnit.h" />
+    <QtMoc Include="settings\workWithUnit.h" />
+    <QtMoc Include="settings\settingsForm.h" />
+    <QtMoc Include="3d\surfaceGraph.h" />
+    <QtMoc Include="3d\topographySeries.h" />
+    <QtMoc Include="request_tile\imagemanager_req.h" />
+    <QtMoc Include="request_tile\layermanager_req.h" />
+    <QtMoc Include="request_tile\layer_req.h" />
+    <QtMoc Include="request_tile\mapcontrol_req.h" />
+    <QtMoc Include="3d\3dForm.h" />
+    <ClInclude Include="calculate\calculateTile.h" />
+    <ClInclude Include="calculate\calc_coverage.h" />
+    <ClInclude Include="calculate\calculatePoint.h" />
+    <ClInclude Include="calculate\color_height.h" />
+    <ClInclude Include="commonType.h" />
+    <ClInclude Include="calculate\coordinate.h" />
+    <ClInclude Include="draw_geometry\drawCoverage.h" />
+    <ClInclude Include="draw_geometry\drawVisCoverage.h" />
+    <ClInclude Include="draw_geometry\endCoveragePos.h" />
+    <ClInclude Include="request_tile\maplayer_req.h" />
+    <QtMoc Include="settings\tableModel.h" />
+    <ClInclude Include="draw_geometry\ObjectDrawController.h" />
+    <ClInclude Include="draw_geometry\BeginPosition.h" />
+    <ClInclude Include="PelengCaption.h" />
+    <QtMoc Include="calculate\ToDegree.h" />
+    <QtMoc Include="SettingControll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="radio_track_ru.ts" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

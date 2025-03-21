@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="coordinate">
+      <UniqueIdentifier>{6932f770-b23a-4d18-8708-78da999b21de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3D">
+      <UniqueIdentifier>{2f367a32-92be-42a3-9f4a-dd7b406d9c53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dynamic interface">
+      <UniqueIdentifier>{f528190e-5455-4134-9b19-a1d89792f50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="calculate">
+      <UniqueIdentifier>{07924c48-6330-4cd9-8ff3-6e7a2182e94e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parse file">
+      <UniqueIdentifier>{1ecd7f84-c29b-4c31-b594-6c7df576c37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="structures">
+      <UniqueIdentifier>{6cfe88b5-b74b-47d7-98e6-81379db90e5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ITM">
+      <UniqueIdentifier>{d7ae1ffd-faed-4222-b355-46a8d27149f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="draw_geometry">
+      <UniqueIdentifier>{26dfbd22-ea7c-4d79-a1be-43a7581ae804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="request_tile">
+      <UniqueIdentifier>{2b52c129-77cc-4042-9dd7-e638134616e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="settings">
+      <UniqueIdentifier>{0adfb1f2-3aed-43c3-893f-ef4a12992e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Translation Files\widgets">
+      <UniqueIdentifier>{73333b3b-f495-4839-8fb4-a591d82c07eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="radio_track.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="radio_track.ui">
+      <Filter>Resource Files</Filter>
+    </QtUic>
+    <QtMoc Include="radio_track.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="radio_track.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_geometry\BeginPosition.cpp">
+      <Filter>draw_geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="request_tile\mapcontrol_req.cpp">
+      <Filter>request_tile</Filter>
+    </ClCompile>
+    <ClCompile Include="request_tile\layermanager_req.cpp">
+      <Filter>request_tile</Filter>
+    </ClCompile>
+    <ClCompile Include="request_tile\layer_req.cpp">
+      <Filter>request_tile</Filter>
+    </ClCompile>
+    <ClCompile Include="request_tile\maplayer_req.cpp">
+      <Filter>request_tile</Filter>
+    </ClCompile>
+    <ClCompile Include="request_tile\imagemanager_req.cpp">
+      <Filter>request_tile</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\tableModel.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\workWithHardware.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\workWithUnit.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\settingsForm.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\formUnit.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_geometry\endCoveragePos.cpp">
+      <Filter>draw_geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\3dForm.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\surfaceGraph.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="3d\topographySeries.cpp">
+      <Filter>3D</Filter>
+    </ClCompile>
+    <ClCompile Include="dynamic_interface\dynamicInterface.cpp">
+      <Filter>dynamic interface</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\calc_coverage.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\calculatePoint.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\calculateTile.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\paramNet.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="settings\settingsHardware.cpp">
+      <Filter>settings</Filter>
+    </ClCompile>
+    <ClCompile Include="parse_file\workWithJson.cpp">
+      <Filter>parse file</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_geometry\drawCoverage.cpp">
+      <Filter>draw_geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="draw_geometry\drawVisCoverage.cpp">
+      <Filter>draw_geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="map_widget.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\color_height.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\coordinate.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="calculate\calculationLosses.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\ComputeDeltaH.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\DiffractionLoss.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FindHorizons.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FreeSpaceLoss.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\FresnelIntegral.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\H0Function.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InitializeArea.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InitializePointToPoint.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\InverseComplementaryCumulativeDistributionFunction.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\itm_area.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\itm_p2p.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\KnifeEdgeDiffraction.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LinearLeastSquaresFit.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LineOfSightLoss.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\LongleyRice.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\QuickPfl.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\SigmaHFunction.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\SmoothEarthDiffraction.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\TerrainRoughness.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\TroposcatterLoss.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\ValidateInputs.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\submodules\itm\src\Variability.cpp">
+      <Filter>ITM</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="calculate\ToDegree.h">
+      <Filter>coordinate</Filter>
+    </QtMoc>
+    <QtMoc Include="request_tile\layer_req.h">
+      <Filter>request_tile</Filter>
+    </QtMoc>
+    <QtMoc Include="request_tile\layermanager_req.h">
+      <Filter>request_tile</Filter>
+    </QtMoc>
+    <QtMoc Include="request_tile\imagemanager_req.h">
+      <Filter>request_tile</Filter>
+    </QtMoc>
+    <QtMoc Include="request_tile\mapcontrol_req.h">
+      <Filter>request_tile</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\workWithUnit.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\tableModel.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\formUnit.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\settingsForm.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="3d\surfaceGraph.h">
+      <Filter>3D</Filter>
+    </QtMoc>
+    <QtMoc Include="3d\topographySeries.h">
+      <Filter>3D</Filter>
+    </QtMoc>
+    <QtMoc Include="3d\3dForm.h">
+      <Filter>3D</Filter>
+    </QtMoc>
+    <QtMoc Include="dynamic_interface\dynamicInterface.h">
+      <Filter>dynamic interface</Filter>
+    </QtMoc>
+    <QtMoc Include="dynamic_interface\factory.h">
+      <Filter>dynamic interface</Filter>
+    </QtMoc>
+    <QtMoc Include="dynamic_interface\interfaceDrawRT.h">
+      <Filter>dynamic interface</Filter>
+    </QtMoc>
+    <QtMoc Include="dynamic_interface\baseInterface.h">
+      <Filter>dynamic interface</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\paramNet.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="widgets\widgetCoordinate.h">
+      <Filter>Translation Files\widgets</Filter>
+    </QtMoc>
+    <QtMoc Include="map_widget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="settings\settingsHardware.h">
+      <Filter>settings</Filter>
+    </QtMoc>
+    <QtMoc Include="draw_geometry\drawStep.h">
+      <Filter>draw_geometry</Filter>
+    </QtMoc>
+    <QtMoc Include="SettingControll.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PelengCaption.h">
+      <Filter>coordinate</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geometry\BeginPosition.h">
+      <Filter>draw_geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="request_tile\maplayer_req.h">
+      <Filter>request_tile</Filter>
+    </ClInclude>
+    <ClInclude Include="commonType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="settings\workWithHardware.h">
+      <Filter>settings</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geometry\endCoveragePos.h">
+      <Filter>draw_geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceRTChoosePoint.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceRTMethodCalc.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceRTChooseUnits.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceDrawCoverage.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\intrefaceDraw3D.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\calc_coverage.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\calculatePoint.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\calculateTile.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\calculationLosses.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceRecvier.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceSender.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\interfaceSettAntSystem.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geometry\drawVisCoverage.h">
+      <Filter>draw_geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="parse_file\workWithJson.h">
+      <Filter>parse file</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geometry\drawCoverage.h">
+      <Filter>draw_geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="struct\structEnetringData.h">
+      <Filter>structures</Filter>
+    </ClInclude>
+    <ClInclude Include="structParamNet.h">
+      <Filter>structures</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\interface_calculate_loss.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\color_height.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="calculate\coordinate.h">
+      <Filter>calculate</Filter>
+    </ClInclude>
+    <ClInclude Include="draw_geometry\ObjectDrawController.h">
+      <Filter>draw_geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="state.h">
+      <Filter>structures</Filter>
+    </ClInclude>
+    <ClInclude Include="structForSendParam.h">
+      <Filter>structures</Filter>
+    </ClInclude>
+    <ClInclude Include="dynamic_interface\paramsList.h">
+      <Filter>dynamic interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="test.ui">
+      <Filter>dynamic interface</Filter>
+    </QtUic>
+    <QtUic Include="3d\3dForm.ui">
+      <Filter>3D</Filter>
+    </QtUic>
+    <QtUic Include="settings\formUnit.ui">
+      <Filter>settings</Filter>
+    </QtUic>
+    <QtUic Include="settings\settingsHardware.ui">
+      <Filter>settings</Filter>
+    </QtUic>
+    <QtUic Include="settings\settingsWidget.ui">
+      <Filter>settings</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="radio_track_ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

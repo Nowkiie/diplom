@@ -1,0 +1,11 @@
+*.sdf
+*.user
+*.opensdf
+*.suo
+*.zip
+Debug
+GeneratedFiles
+Release
+Win32
+*.db
+*.opendb

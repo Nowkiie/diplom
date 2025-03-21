@@ -1,0 +1,39 @@
+Source: nprotocol
+Section: app/znak
+Priority: optional
+Maintainer: m0xf <m0xf@znak.ru>
+Build-Depends: debhelper (>= 9), qt5-qmake, qtbase5-dev, libboost-system-dev
+Standards-Version: 3.9.8
+Homepage: http://zank.ru
+Vcs-Git: http://serverznak:3000/m0xf/nprotocol.git
+Vcs-Browser: http://serverznak:3000/m0xf/nprotocol.git
+
+Package: ncmonitor
+Architecture: any
+Multi-arch: same
+Section: utils/znak
+Depends: libstdc++6 (>=8), ${shlibs:Depends}, ${misc:Depends}
+Description: 
+ Монитор протоколов сетевого взаимодействия 
+ .
+ This package contains the ncmonitor
+
+Package: noderesolver
+Architecture: any
+Multi-arch: same
+Section: service/znak
+Depends: libstdc++6 (>=8), ${shlibs:Depends}, ${misc:Depends}
+Description: 
+ Служба имен сетевого обмена
+ .
+ This package contains the noderesolver
+ 
+Package: nctop
+Architecture: any
+Multi-arch: same
+Section: utils/znak
+Depends: libstdc++6 (>=8), ${shlibs:Depends}, ${misc:Depends}
+Description: 
+ Монитор протоколов сетевого взаимодействия для консоли
+ .
+ This package contains the ncmonitor

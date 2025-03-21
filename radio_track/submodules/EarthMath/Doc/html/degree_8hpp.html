@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Earth math: Файл EarthMath/src/degree.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Earth math
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('degree_8hpp.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#typedef-members">Определения типов</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл degree.hpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;ostream&gt;</code><br />
+<code>#include &quot;<a class="el" href="em__exception_8hpp_source.html">em_exception.hpp</a>&quot;</code><br />
+</div>
+<p><a href="degree_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classearth__math_1_1degree.html">earth_math::degree&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Шаблонный класс градуса  <a href="classearth__math_1_1degree.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classearth__math_1_1abstract__functional.html">earth_math::abstract_functional</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс функционала для произвольных градусов.  <a href="classearth__math_1_1abstract__functional.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classearth__math_1_1latitude__functional.html">earth_math::latitude_functional</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс функционала для градусов широты  <a href="classearth__math_1_1latitude__functional.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classearth__math_1_1longitude__functional.html">earth_math::longitude_functional</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Класс функционала для градусов долготы  <a href="classearth__math_1_1longitude__functional.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespaceearth__math"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html">earth_math</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a4b51ee736b8736e36dd5614c51faced1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a4b51ee736b8736e36dd5614c51faced1">earth_math::display_formats</a> = enum { only_degrees, show_minutes, show_seconds, show_milliseconds }</td></tr>
+<tr class="memdesc:a4b51ee736b8736e36dd5614c51faced1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Точность отображения градусов  <a href="namespaceearth__math.html#a4b51ee736b8736e36dd5614c51faced1">Подробнее...</a><br /></td></tr>
+<tr class="separator:a4b51ee736b8736e36dd5614c51faced1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92007dce1adbd334d568bb9067934825"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a92007dce1adbd334d568bb9067934825">earth_math::degree_abstract</a> = degree&lt; abstract_functional &gt;</td></tr>
+<tr class="memdesc:a92007dce1adbd334d568bb9067934825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Произвольные градусы  <a href="namespaceearth__math.html#a92007dce1adbd334d568bb9067934825">Подробнее...</a><br /></td></tr>
+<tr class="separator:a92007dce1adbd334d568bb9067934825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb98f81d866a4d8fd176f1cf0258225"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#afcb98f81d866a4d8fd176f1cf0258225">earth_math::degree_latitude</a> = degree&lt; latitude_functional &gt;</td></tr>
+<tr class="memdesc:afcb98f81d866a4d8fd176f1cf0258225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Градусы широты  <a href="namespaceearth__math.html#afcb98f81d866a4d8fd176f1cf0258225">Подробнее...</a><br /></td></tr>
+<tr class="separator:afcb98f81d866a4d8fd176f1cf0258225"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8647ec501130d30064700119fa8b900"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#af8647ec501130d30064700119fa8b900">earth_math::degree_longitude</a> = degree&lt; longitude_functional &gt;</td></tr>
+<tr class="memdesc:af8647ec501130d30064700119fa8b900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Градусы долготы  <a href="namespaceearth__math.html#af8647ec501130d30064700119fa8b900">Подробнее...</a><br /></td></tr>
+<tr class="separator:af8647ec501130d30064700119fa8b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a77d67f90f6a4aa0aa73994fd9eafbd02"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a77d67f90f6a4aa0aa73994fd9eafbd02">earth_math::get_degree_params</a> (int64_t value, int32_t *degrees, int32_t *minutes, int32_t *seconds, int32_t *milliseconds, int32_t *sign)</td></tr>
+<tr class="memdesc:a77d67f90f6a4aa0aa73994fd9eafbd02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция преобразования милисекунд в формат градусы, минуты, секунды, миллисекунды  <a href="namespaceearth__math.html#a77d67f90f6a4aa0aa73994fd9eafbd02">Подробнее...</a><br /></td></tr>
+<tr class="separator:a77d67f90f6a4aa0aa73994fd9eafbd02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a037b2462a530196fa752ea017194a394"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a037b2462a530196fa752ea017194a394">earth_math::operator&lt;&lt;</a> (std::ostream &amp;stream, const degree&lt; abstract_functional &gt; &amp;deg)</td></tr>
+<tr class="separator:a037b2462a530196fa752ea017194a394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c84ffb019544df447afdbe52c576cfb"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a8c84ffb019544df447afdbe52c576cfb">earth_math::operator&lt;&lt;</a> (std::ostream &amp;stream, const degree&lt; latitude_functional &gt; &amp;deg)</td></tr>
+<tr class="separator:a8c84ffb019544df447afdbe52c576cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa06e6040c0fc8e1da053e1ebe483f71e"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#aa06e6040c0fc8e1da053e1ebe483f71e">earth_math::operator&lt;&lt;</a> (std::ostream &amp;stream, const degree&lt; longitude_functional &gt; &amp;deg)</td></tr>
+<tr class="separator:aa06e6040c0fc8e1da053e1ebe483f71e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a0b7cac69855513858eaf4f9aa1a84a6a"><td class="memItemLeft" align="right" valign="top">const int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a0b7cac69855513858eaf4f9aa1a84a6a">earth_math::milli_in_second</a> = 1000</td></tr>
+<tr class="separator:a0b7cac69855513858eaf4f9aa1a84a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7283a9c326b6789192347151a2beabd8"><td class="memItemLeft" align="right" valign="top">const int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a7283a9c326b6789192347151a2beabd8">earth_math::seconds_in_minute</a> = 60</td></tr>
+<tr class="separator:a7283a9c326b6789192347151a2beabd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3404a34c8bfdbbbdaf15960b528d3293"><td class="memItemLeft" align="right" valign="top">const int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a3404a34c8bfdbbbdaf15960b528d3293">earth_math::minutes_in_degrees</a> = 60</td></tr>
+<tr class="separator:a3404a34c8bfdbbbdaf15960b528d3293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ef7ccfd808d6a9d8c3b83831cba4570"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a4ef7ccfd808d6a9d8c3b83831cba4570">earth_math::pi</a> = 3.1415926535897932384626433832795</td></tr>
+<tr class="separator:a4ef7ccfd808d6a9d8c3b83831cba4570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8deb8bee8d54adbab2f8d4de528c597"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#ac8deb8bee8d54adbab2f8d4de528c597">earth_math::eps</a> = 1e-10</td></tr>
+<tr class="separator:ac8deb8bee8d54adbab2f8d4de528c597"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff32a4cd491bb8bdcdfb231664ae90f"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a3ff32a4cd491bb8bdcdfb231664ae90f">earth_math::one_minute_</a> = 1. / double(minutes_in_degrees)</td></tr>
+<tr class="separator:a3ff32a4cd491bb8bdcdfb231664ae90f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0bc6192a65819be3f30926709b18e0"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#acc0bc6192a65819be3f30926709b18e0">earth_math::one_second_</a> = one_minute_ / double(seconds_in_minute)</td></tr>
+<tr class="separator:acc0bc6192a65819be3f30926709b18e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f24349af7169d211c70045fb16d4fbd"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceearth__math.html#a5f24349af7169d211c70045fb16d4fbd">earth_math::one_millisecond_</a> = one_second_ / double(milli_in_second)</td></tr>
+<tr class="separator:a5f24349af7169d211c70045fb16d4fbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_16ae5a2b07342271919422aef869f3db.html">EarthMath</a></li><li class="navelem"><a class="el" href="dir_5f7f5916e278a3472f57c93031fa9c66.html">src</a></li><li class="navelem"><a class="el" href="degree_8hpp.html">degree.hpp</a></li>
+    <li class="footer">Создано системой
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

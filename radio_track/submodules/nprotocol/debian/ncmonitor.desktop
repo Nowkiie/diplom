@@ -1,0 +1,19 @@
+[Desktop Entry]
+Name=NC Monitor
+Name[ru]=NC Монитор
+Comment=Network interchange protocols monitor
+Comment[ru]=Монитор протоколов сетевого обмена
+Type=Application
+NoDisplay=false
+Exec=/opt/znak/bin/ncmonitor
+Icon=/opt/znak/share/icons/ncmonitor.png
+Icon[ru]=/opt/znak/share/icons/ncmonitor.png
+Hidden=false
+Path=/opt/znak/data
+Terminal=false
+StartupNotify=false
+Categories=Znak
+
+Version=_VERSION_
+
+X-Znak-Autostart=false

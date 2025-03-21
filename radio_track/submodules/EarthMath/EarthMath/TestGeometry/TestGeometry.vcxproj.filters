@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\src">
+      <UniqueIdentifier>{bc4526f8-eab5-4c94-bf69-a743aed9545c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests">
+      <UniqueIdentifier>{38426ea0-eed1-4b89-b7ea-9f1297bba5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\AbstractTests">
+      <UniqueIdentifier>{4dd0b8bd-4e78-4a23-ad57-5f6f0b495bb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\LatitudeTests">
+      <UniqueIdentifier>{52c9f52f-97a9-4f81-a0d6-03ac3bc03c31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\Longitude Tests">
+      <UniqueIdentifier>{b09a40c9-7fcb-42f8-baae-83acec28511d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\Functional Tests">
+      <UniqueIdentifier>{03b8eb30-06b5-434c-a7c4-88d5ddf7cb75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tests\Degree Module Tests">
+      <UniqueIdentifier>{07329629-c8cd-4901-ac9f-46a962a7004e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsAbstractDivTest.cpp">
+      <Filter>Source Files\tests\AbstractTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsAbstractMulTest.cpp">
+      <Filter>Source Files\tests\AbstractTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsAbstractSubTest.cpp">
+      <Filter>Source Files\tests\AbstractTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsAbstractSumTest.cpp">
+      <Filter>Source Files\tests\AbstractTests</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDegreeTest.cpp">
+      <Filter>Source Files\tests\AbstractTests</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDegreeLatitudeTest.cpp">
+      <Filter>Source Files\tests\LatitudeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLatitudeSumTest.cpp">
+      <Filter>Source Files\tests\LatitudeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLatitudeSubTest.cpp">
+      <Filter>Source Files\tests\LatitudeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLatitudeMulTest.cpp">
+      <Filter>Source Files\tests\LatitudeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLatitudeDivTest.cpp">
+      <Filter>Source Files\tests\LatitudeTests</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDegreeLongitudeTest.cpp">
+      <Filter>Source Files\tests\Longitude Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLongitudeSumTest.cpp">
+      <Filter>Source Files\tests\Longitude Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLongitudeSubTest.cpp">
+      <Filter>Source Files\tests\Longitude Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLongitudeMulTest.cpp">
+      <Filter>Source Files\tests\Longitude Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsLongitudeDivTest.cpp">
+      <Filter>Source Files\tests\Longitude Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="PointConstructTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceFunctionTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="AzimuthFunctionTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetPointFunctionTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="TargetPointInKmFunctionTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="PelengIntersectionFunctionTest.cpp">
+      <Filter>Source Files\tests\Functional Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDegreeModuleTest.cpp">
+      <Filter>Source Files\tests\Degree Module Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsModuleSumTest.cpp">
+      <Filter>Source Files\tests\Degree Module Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="ArythmeticsModuleSubTest.cpp">
+      <Filter>Source Files\tests\Degree Module Tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\earth_point.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\degree.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\earth_functions.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\em_exception.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\object_finder.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\module_functional.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\degree_module.hpp">
+      <Filter>Source Files\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
